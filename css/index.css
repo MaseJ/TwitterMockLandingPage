@@ -1,0 +1,191 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+html, body{
+    /*background: url("../images/graffitiTwitter.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    */
+    background-color: black;
+    opacity: 1;
+    color: white;
+    padding: 0;
+    overflow-y: hidden;
+    font-family: 'Silkscreen', 'cursive';
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#background{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 60%;
+    overflow: hidden;
+    filter: contrast(1.4);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#twitter--logo {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 2rem;
+}
+
+#title {
+    margin-left: 2rem;
+    font-size: 3rem;
+    color: rgb(29 161 242);
+}
+
+.text {
+    color: rgb(29 161 242);
+    font-size: 2rem;
+}
+
+
+.card {
+    
+    border-width: .1rem;
+    width: fit-content;
+}
+
+#sign--up{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    align-self: flex-start;
+    margin-left: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#sign--in{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-left: 2rem;
+    border-top: none;
+}
+
+button {
+    margin: 1rem;
+    background-color: black;
+    color: rgb(29 161 242);
+    border: rgb(29 161 242) solid;
+    border-width: 1px;
+    border-radius: 1rem;
+    padding: .5rem;
+    font-family: 'Silkscreen', 'cursive';
+    background-image: linear-gradient(#1DA1F2, #1DA1F2);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .5s, color .5s;
+    box-shadow: 2px 4px 0px #d7f0ff;
+}
+
+button:hover {
+    background-size: 100% 100%;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 1px 3px 0px #d7f0ff;
+}
+
+#sign--in button {
+    width: fit-content;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    padding-top: 3rem;
+}
+
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@media only screen and (max-width: 1250px) {
+    #background {
+        width: 50%;
+    }
+
+    #main {
+        width: 50%;
+    }
+
+    #sign--up {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    #background {
+        width: 30%;
+    }
+
+    #main {
+        width: 70%;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    #background {
+        width: 100%;
+        opacity: .3;
+    }
+    body, html{
+        background-color: none;
+    }
+
+    #main {
+        left: 5%;
+        width: 100%;
+    }
+
+    #sign--in {
+        margin-left: 0;
+    }
+
+    #sign--up {
+        margin-left: 0;
+    }
+
+    #title {
+        margin-left: 0;
+    }
+
+    #twitter--logo {
+        margin-left: 0;
+    }
+
+
+  }
+
+
+
+
+
+
